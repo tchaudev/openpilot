@@ -156,7 +156,7 @@ class AlertManager(object):
         "Be ready to take over at any time",
         "Always keep hands on wheel and eyes on road",
         AlertStatus.normal, AlertSize.mid,
-        Priority.LOW_LOWEST, None, None, 0., 0., 15.),
+        Priority.LOW_LOWEST, None, None, 0., 0., 0.),
 
     "ethicalDilemma": Alert(
         "TAKE CONTROL IMMEDIATELY",
