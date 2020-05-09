@@ -276,7 +276,8 @@ def thermald_thread():
       last_update = datetime.datetime.fromisoformat(params.get("LastUpdateTime", encoding='utf8'))
     except (TypeError, ValueError):
       last_update = now
-    dt = now - last_update
+    # dt = now - last_update
+    dt = now - now
 
     update_failed_count = params.get("UpdateFailedCount")
     update_failed_count = 0 if update_failed_count is None else int(update_failed_count)
